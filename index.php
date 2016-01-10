@@ -52,6 +52,30 @@
 </head>
 
 <body>
+
+  <!-- LOGIN WITH FACEBOOK -->
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId: '1022328894490147',
+        xfbml: true,
+        version: 'v2.5'
+      });
+    };
+
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) {
+        return;
+      }
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+
   <div class="container">
     <nav class="navbar bg-faded">
       <ul class="nav navbar-nav">
@@ -74,10 +98,6 @@
           <a class="nav-link" href="#">FAQ</a>
         </li>
       </ul>
-      <!-- <form class="form-inline pull-xs-right">
-        <input class="form-control" type="text" placeholder="Search">
-        <button class="btn btn-primary-outline" type="submit">Search</button>
-      </form> -->
     </nav>
 
 
@@ -136,10 +156,13 @@
             <div class="subscribe_form">
               <form action="" method="post">
                 <input type="text" class="form-control" id="email_address" placeholder="Enter your e-mail address">
-                <br />
+                <br>
                 <div class="g-recaptcha" data-sitekey="6Lcl5hQTAAAAABxSlsL3ymggHj5IWXFI0RRn_La9"></div>
-                <br />
-                <input class="btn btn-info subscribe_btn" type="submit" value="Subscribe" />
+                <br>
+                <input class="btn btn-info subscribe_btn" type="submit" value="Subscribe">
+                <br>
+                <!-- <div class="fb-login-button m-t-1" data-scope="public_profile,email" data-onlogin="signupFB();" data-max-rows="1" data-size="large" data-show-faces="false" data-auto-logout-link="false"></div> -->
+                <fb:login-button scope="public_profile,email" onlogin="signupFB();"></fb:login-button>
               </form>
               <br>
             </div>
@@ -147,6 +170,8 @@
           <div class="col-xs-12 col-md-6">
             <h3>Marketing text</h3>
             <p class="lead">and or images</p>
+            <div class="fb-like" data-share="true" data-width="450" data-show-faces="true">
+            </div>
           </div>
         </div>
       </div>
