@@ -13,7 +13,7 @@
 
             if(filter_var($email_addr, FILTER_VALIDATE_EMAIL)):
               if ($response['success'] == TRUE):
-                if (mysqli_query($link,"INSERT INTO `tbl_subscribers`(`email`) VALUES ('" . $email_addr . "')")):
+                if (mysqli_query($link,"INSERT INTO `tbl_subscribers` (`email`) VALUES ('" . $email_addr . "')")):
                   echo json_encode( array(
                       "final_msg" => TRUE,
                       "message" => "<div class='bg-success'>" . $_POST["email"] . " has been added to our mailing list. Thank you for subscribing!</div>"

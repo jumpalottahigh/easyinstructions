@@ -25,9 +25,10 @@ function subscribeClick() {
         if(res.final_msg) {
           $(".subscribe_form").slideUp();
         } else {
+          // Resetting the reCaptcha so the user can try again
           grecaptcha.reset();
         }
-        $(".subscribe_msg").slideUp().html(res.message).slideDown();
+        $(".subscribe_msg").html(res.message).slideDown();
       });
       } else {
         alert( "Please verify that you are indeed not a robot" );
