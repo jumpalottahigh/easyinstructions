@@ -7,45 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
-
   <!-- Google Roboto font -->
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 
-  <!-- Custom styles will be moved to separate file later -->
-  <style>
-    /*ADD ROBOTO FONT TO ALL ELEMENTS*/
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
 
-    * {
-      font-family: 'Roboto', sans-serif!important;
-    }
-    /*NAV STYLES*/
-
-    .navbar {
-      background-color: #e3f2fd;
-    }
-    /*GOOGLE TRANSLATE API POSITIONING*/
-
-    #google_translate_element {
-      text-align: right;
-      margin-top: -3.5rem;
-      margin-right: 1rem;
-    }
-    /* Sticky footer styles */
-
-    html {
-      position: relative;
-      min-height: 100%;
-    }
-
-    .footer {
-      position: absolute;
-      bottom: 0;
-      background-color: #e3f2fd;
-      /*width: 100%;*/
-    }
-  </style>
+  <!-- CUSTOM STYLES -->
+  <link rel="stylesheet" href="assets/css/main.css">
 
   <!-- Including jQuery for the functions on site-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -157,12 +126,14 @@
                 <button class="btn btn-info-outline" type="button">Go!</button>
               </span>
             </div>
-            <br>
-            <h3 class="bg-success p-a-1">Interested?</h3>
+          </div>
+        </div>
+        <div class="row p-t-3">
+          <h3 class="col-xs-12 bg-success p-a-1">Interested?</h3>
+          <div class="col-xs-12 col-md-6">
             <p>Let us know by subscribing for news and updates about our service</p>
             <div class="subscribe_msg hidden"></div>
             <div class="subscribe_form">
-              <!-- <button class="btn btn-info-outline">Choose File</button> -->
               <form action="" method="post">
                 <input type="text" class="form-control" id="email_address" placeholder="Enter your e-mail address">
                 <br />
@@ -172,6 +143,10 @@
               </form>
               <br>
             </div>
+          </div>
+          <div class="col-xs-12 col-md-6">
+            <h3>Marketing text</h3>
+            <p class="lead">and or images</p>
           </div>
         </div>
       </div>

@@ -16,27 +16,27 @@
                 if (mysqli_query($link,"INSERT INTO `tbl_subscribers` (`email`) VALUES ('" . $email_addr . "')")):
                   echo json_encode( array(
                       "final_msg" => TRUE,
-                      "message" => "<div class='bg-success'>" . $_POST["email"] . " has been added to our mailing list. Thank you for subscribing!</div>"
+                      "message" => "<div class='bg-success p-a-1'>" . $_POST["email"] . " has been added to our mailing list. Thank you for subscribing!</div>"
                       )
                     );
                 else:
                   echo json_encode( array(
                       "final_msg" => FALSE,
-                      "message" => "<div class='bg-warning'>" . $_POST["email"] . " has already been added to our list.</div>"
+                      "message" => "<div class='bg-warning p-a-1'>" . $_POST["email"] . " has already been added to our list.</div>"
                     )
                   );
                 endif;
               else:
                 echo json_encode( array(
                     "final_msg" => FALSE,
-                    "message" => "<div class='bg-danger'>reCaptcha validation failed</div>"
+                    "message" => "<div class='bg-danger p-a-1'>reCaptcha validation failed</div>"
                   )
                 );
               endif;
             else:
               echo json_encode( array(
                   "final_msg" => FALSE,
-                  "message" => "<div class='bg-danger'>This email address is not valid</div>"
+                  "message" => "<div class='bg-danger p-a-1'>This email address is not valid</div>"
                 )
               );
             endif;

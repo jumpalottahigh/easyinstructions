@@ -31,10 +31,10 @@ function subscribeClick() {
         $(".subscribe_msg").html(res.message).slideDown();
       });
       } else {
-        alert( "Please verify that you are indeed not a robot" );
+        $(".subscribe_msg").html("<div class='bg-danger p-a-1'>Please verify that you are indeed not a robot</div>").slideDown();
       }
     } else {
-      alert( "Please enter a valid e-mail address" );
+      $(".subscribe_msg").html("<div class='bg-danger p-a-1'>Please enter a valid e-mail address</div>").slideDown();
     }
 
   });

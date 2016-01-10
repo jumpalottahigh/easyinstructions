@@ -1,0 +1,27 @@
+/*ADD ROBOTO FONT TO ALL ELEMENTS*/
+
+* {
+  font-family: 'Roboto', sans-serif!important;
+}
+/*NAV STYLES*/
+
+.navbar {
+  background-color: #e3f2fd;
+}
+/*GOOGLE TRANSLATE API POSITIONING*/
+
+#google_translate_element {
+  text-align: right;
+  margin-top: -3.5rem;
+  margin-right: 1rem;
+}
+/* Sticky footer styles */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.footer {
+  background-color: #e3f2fd;
+}
