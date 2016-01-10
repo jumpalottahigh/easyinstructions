@@ -47,6 +47,9 @@
     }
   </style>
 
+  <!-- Including jQuery for the functions on site-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
   <!-- GOOGLE ANALYTICS -->
   <script>
     (function(i, s, o, g, r, a, m) {
@@ -67,6 +70,15 @@
 
   <!-- reCAPTCHA -->
   <script src='https://www.google.com/recaptcha/api.js'></script>
+
+  <!-- Functions for this page -->
+  <script src='assets/js/index_functions.js'></script>
+
+  <script>
+    $(document).ready(function() {
+      subscribeClick();
+    });
+  </script>
 
 </head>
 
@@ -148,15 +160,18 @@
             <br>
             <h3 class="bg-success p-a-1">Interested?</h3>
             <p>Let us know by subscribing for news and updates about our service</p>
-            <div>
+            <div class="subscribe_msg hidden"></div>
+            <div class="subscribe_form">
               <!-- <button class="btn btn-info-outline">Choose File</button> -->
-              <input type="text" class="form-control" placeholder="Enter your e-mail address">
+              <form action="" method="post">
+                <input type="text" class="form-control" id="email_address" placeholder="Enter your e-mail address">
+                <br />
+                <div class="g-recaptcha" data-sitekey="6Lcl5hQTAAAAABxSlsL3ymggHj5IWXFI0RRn_La9"></div>
+                <br />
+                <input class="btn btn-info subscribe_btn" type="submit" value="Subscribe" />
+              </form>
               <br>
             </div>
-            <div class="g-recaptcha" data-sitekey="6Lcl5hQTAAAAABxSlsL3ymggHj5IWXFI0RRn_La9"></div>
-            <p>
-              <button class="btn btn-info">Subscribe</button>
-            </p>
           </div>
         </div>
       </div>
@@ -193,8 +208,7 @@
   </script>
   <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-  <!-- jQuery first, then Bootstrap JS. -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <!-- Bootstrap JS. -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
 </body>
 
