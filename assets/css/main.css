@@ -1,7 +1,7 @@
 /*ADD ROBOTO FONT TO ALL ELEMENTS*/
 
-* {
-  font-family: 'Roboto', sans-serif!important;
+h1, h2, h3, h4, h5, h6, p {
+  font-family: 'Roboto', sans-serif;
 }
 /*NAV STYLES*/
 
@@ -24,4 +24,12 @@ html {
 
 .footer {
   background-color: #e3f2fd;
+}
+
+.jumbotron {
+  background-color: #fff;
+}
+
+#play-video {
+  color: #000;
 }
