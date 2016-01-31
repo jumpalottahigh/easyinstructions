@@ -1,14 +1,3 @@
-$(document).ready(function() {
-  $('#play-video').on('click', function(ev) {
-
-    $("#video").show();
-    $("#video")[0].src += "&autoplay=1";
-    ev.preventDefault();
-  });
-
-  subscribeClick();
-});
-
 function signupFB() {
   FB.login(function(response) {
     // handle the response

@@ -1,5 +1,5 @@
 <?php
-  $link = mysqli_connect("127.0.0.1", "root", "", "easyinst_db");
+  $link = mysqli_connect("127.0.0.1", "easyinst_subscr", "easyinst2016", "easyinst_db");
 
   if (!$link):
       echo "Error: Unable to connect to MySQL." . PHP_EOL;

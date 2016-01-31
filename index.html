@@ -46,6 +46,19 @@
   <!-- Functions for this page -->
   <script src='assets/js/index_functions.js'></script>
 
+  <script>
+    $(document).ready(function () {
+      $('#play-video').on('click', function(ev) {
+
+        $("#video").show();
+        $("#video")[0].src += "&autoplay=1";
+        ev.preventDefault();
+      });
+
+      subscribeClick();
+    });
+  </script>
+
 </head>
 
 <body>
@@ -112,9 +125,9 @@
             <div class="subscribe_form">
               <form action="" method="post">
                 <input type="text" class="form-control" id="email_address" placeholder="Enter your e-mail address">
-                <br>
+                <br/>
                 <div class="g-recaptcha" data-sitekey="6Lcl5hQTAAAAABxSlsL3ymggHj5IWXFI0RRn_La9"></div>
-                <br>
+                <br/>
                 <input class="btn btn-info btn-block subscribe_btn" type="submit" value="Subscribe">
               </form>
               <br>
